@@ -59,3 +59,6 @@ with zipfile.ZipFile("resultado_compactado.pdf", 'w', zipfile.ZIP_DEFLATED) as z
             path_relativo = os.path.relpath(path, "./pdfs")
             zipf.write(path, path_relativo)
 
+
+
+os.remove(name)
