@@ -3,10 +3,10 @@ import pandas as pd
 # Defina o nome do arquivo CSV
 csv_file = "./files/operadoras.csv"
 
-
+df = pd.read_csv(csv_file, sep=';', engine='python', encoding='utf-8')
 # Função para verificar se uma coluna contém valores nulos
 def verifica_null(coluna):
-    df = pd.read_csv(csv_file, sep=';', engine='python', encoding='utf-8')
+    
     
     if coluna not in df.columns:
         print(f"A coluna '{coluna}' não existe no arquivo CSV.")
@@ -20,3 +20,10 @@ def verifica_null(coluna):
         print(f"A coluna '{coluna}' não contém valores nulos.")
 
 
+# passar nas linhas do csv
+print(len(df))
+for line in df.columns:
+    print(f"colune {line}: ")
+    verifica_null(line)
+    print("------------------")
+    # break
