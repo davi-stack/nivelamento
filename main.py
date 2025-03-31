@@ -45,3 +45,8 @@ def buscar_operadoras(q: str = Query(..., description="Termo de busca")):
         if q.lower() in op["Razao_Social"].lower() or q.lower() in op["Nome_Fantasia"].lower()
     ]
     return resultado
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)  
