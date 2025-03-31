@@ -1,11 +1,12 @@
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, Query, HTTPException, status, Request
 import pandas as pd
 import csv
 app = FastAPI()
 from fastapi.middleware.cors import CORSMiddleware
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:8080"],  # Permite requisições do frontend
+    allow_origins=["*"],  # Permite requisições de qualquer origem
     allow_credentials=True,
     allow_methods=["*"],  # Permite todos os métodos (GET, POST, etc.)
     allow_headers=["*"],  # Permite todos os headers
@@ -20,6 +21,18 @@ def carregar_operadoras():
     return operadoras
 
 dados_operadoras = carregar_operadoras()
+
+# @app.middleware("http")
+# async def check_api_key(request: Request, call_next):
+#     api_key = request.headers.get("X-API-KEY")
+#     if api_key != "your_secret_api_key":
+#         raise HTTPException(
+#             status_code=status.HTTP_403_FORBIDDEN,
+#             detail="Invalid API Key"
+#         )
+#     response = await call_next(request)
+#     return response
+
 @app.get("/operadoras")
 def buscar_operadoras(q: str = Query(..., description="Termo de busca")):
     i = 0
