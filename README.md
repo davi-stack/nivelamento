@@ -1,18 +1,18 @@
-### Esse repositório é para um teste de processo seletivo da intuitive Care
+# Esse repositório é para um teste de processo seletivo da intuitive Care
 
 ## Desafio1:
 #WebScraping, criar um script que acesse um link de um site e baixe dois arquivos pdf
 #Qual linguagem?
 Linguagem: Python
 
-# O que pensei? Como foi feito?
+### O que pensei? Como foi feito?
 Pegar o html pelo 'request' como string 
 criar uma lista de tag links, usando o 're', expressão regular de '<a*a/>'
 filtrar as tags que continham os nomes dos arquivos pedidos
 dessas tags pegar o link, pelo 'href*', depois desses links pegar todos que é .pdf para ter certeza
 baixar os itens dos links, depois juntar tudo em um arquivo zip 
 
-### **Desafio 2: Extração e Consolidação de Tabelas de PDF**  
+## **Desafio 2: Extração e Consolidação de Tabelas de PDF**  
 
 **Objetivo:**  
 Extrair tabelas de um arquivo PDF (páginas 3 a 180), consolidar os dados em um DataFrame, processá-los e gerar um arquivo CSV compactado em ZIP.  
@@ -80,6 +80,29 @@ Passo a Passo:
 Problemas Encontrados:
 
     Páginas 1-2 sem tabelas: Extração iniciou na página 3.
+
+## Desafio 3
+**Objetivo:**  
+CRIAR TABELAS QUE COMPORTEMA  ESTRUTURA DE CSVs
+---  
+#### **Linguagem e Pacotes:**  
+python -> pandas, 
+sql
+
+### O que pensei? Como foi feito?
+Idenficar tipos dos campos
+Identificar possíveis chaves primárias, no caso criei um scrip para checar repetição, tinha uma ideia pelos nomes que REG_ANS era a chave da primeira tabela, mas queria ver se não se repetia, já a segunda todos os campos minimamente viáveis para serem chave primária se repetiam, então eu fiz uma chave primária composta.
+Identificar chave estrangeira Registro_ANS
+
+Criar script de criação de tabelas
+task3e4/files/create_table1.sql
+task3e4/files/create_table12.sql
+
+Depois de modelado, usar copy para dar insert nas tabelas, delimitador ';'
+query1 ->
+query2 ->
+
+
 
 
 
