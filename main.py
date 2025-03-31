@@ -49,4 +49,13 @@ def buscar_operadoras(q: str = Query(..., description="Termo de busca")):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)  
+    import os  # Adicione esta linha
+    
+    # Lê a porta da variável de ambiente ou usa 8000 localmente
+    port = int(os.environ.get("PORT", 8000))  
+    
+    uvicorn.run(
+        app, 
+        host="0.0.0.0",  # Obrigatório para o Render
+        port=port        # Usa a porta do ambiente
+    )

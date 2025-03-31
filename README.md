@@ -102,6 +102,14 @@ Depois de modelado, usar copy para dar insert nas tabelas, delimitador ';'
 query1 ->
 query2 ->
 
+Problemas Encontrados:
+    Campos float usando ',' -> solução: /task3e4/remove_virgules.py
+
+# Desafio 4
+
+
+
+
 
 
 
