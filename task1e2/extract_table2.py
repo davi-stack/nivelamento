@@ -3,7 +3,7 @@ import pandas as pd
 import os 
 import zipfile
 # Caminho para o arquivo PDF
-caminho_pdf = '../task1/pdfs/Anexo_I_Rol_2021RN_465.2021_RN627L.2024.pdf'
+caminho_pdf = 'pdfs/Anexo_I_Rol_2021RN_465.2021_RN627L.2024.pdf'
 
 # Páginas a serem extraídas
 paginas = range(3, 181)

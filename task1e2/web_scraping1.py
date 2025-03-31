@@ -52,7 +52,7 @@ for link in anexos:
 #baixa os anexos
 
 
-with zipfile.ZipFile("resultado_compactado.pdf", 'w', zipfile.ZIP_DEFLATED) as zipf:
+with zipfile.ZipFile("resultado_compactado.zip", 'w', zipfile.ZIP_DEFLATED) as zipf:
     for raiz, _, files in os.walk("./pdfs"):
         for file in files:
             path = os.path.join(raiz, file)
@@ -61,4 +61,4 @@ with zipfile.ZipFile("resultado_compactado.pdf", 'w', zipfile.ZIP_DEFLATED) as z
 
 
 
-os.remove(name)
+# os.remove(name)
