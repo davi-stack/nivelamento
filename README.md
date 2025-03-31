@@ -1,6 +1,14 @@
 # Esse repositório é para um teste de processo seletivo da intuitive Care
 
 ## Desafio1:
+# Como testar?
+ Entrar no diretório task1e2
+ no linux:
+ python3 webscraping1.py
+ windows
+ python webscraping1.py
+ pdfs extraidos na pasta pdfs(se não existir será criado), zip na pasta task1e2
+
 #WebScraping, criar um script que acesse um link de um site e baixe dois arquivos pdf
 #Qual linguagem?
 Linguagem: Python
@@ -13,6 +21,10 @@ dessas tags pegar o link, pelo 'href*', depois desses links pegar todos que é .
 baixar os itens dos links, depois juntar tudo em um arquivo zip 
 
 ## **Desafio 2: Extração e Consolidação de Tabelas de PDF**  
+# Como testar?
+Precisa ter instalar alguns pacotes além do python, abaixo escrevo sobre
+então no diretório task1e2 rodar
+python3 extract_taable2.py
 
 **Objetivo:**  
 Extrair tabelas de um arquivo PDF (páginas 3 a 180), consolidar os dados em um DataFrame, processá-los e gerar um arquivo CSV compactado em ZIP.  
@@ -82,6 +94,15 @@ Problemas Encontrados:
     Páginas 1-2 sem tabelas: Extração iniciou na página 3.
 
 ## Desafio 3
+# Como testar?
+Baixar os CSVs, do ano  do ano 2023 e 2024 do link https://dadosabertos.ans.gov.br/FTP/PDA/demonstracoes_contabeis/
+e o csv do link https://dadosabertos.ans.gov.br/FTP/PDA/operadoras_de_plano_de_saude_ativas/
+mover para o diretório task3e4, criar um diretório chamado 'files', mover os CVS para dentro deles. Depois no diretório task3e4 rodar o comando python3 remove_virgules.py para remover ',' e trocar por '.', para facilitar o uso dos campos. Após isso, rodar em um banco postgreesql, o scritp de task3e4/create_table1.sql, logo em seguida create_table2.sql. Inserção, rodar extract.sql esse script começa com \copy, pode ser usado apenas copy se for em banco local, eu testei com um remoto. Depois  query1.sql e query2.sql
+
+Há alguns auxiliares que não fazem parte da descrição do desafio, mas foram usados para resolver subproblemas pequenos
+task3e4/verity_line.py -> para checar repetições de campo em uma coluna, depois alterei para uma outra para apenas testar uma hipotese de chave primária composta, que de certo
+task3e4/check_line_null -> para checar campos em branco
+task
 **Objetivo:**  
 CRIAR TABELAS QUE COMPORTEMA  ESTRUTURA DE CSVs
 ---  
@@ -106,6 +127,8 @@ Problemas Encontrados:
     Campos float usando ',' -> solução: /task3e4/remove_virgules.py
 
 # Desafio 4
+## api
+
 
 
 

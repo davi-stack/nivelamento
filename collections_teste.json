@@ -1,0 +1,242 @@
+{
+	"id": "ccfbd0c0-bacf-48cc-9281-6c12cfb7507b",
+	"name": "New Collection",
+	"timestamp": "2025-03-31T03:12:52.684Z",
+	"collection_id": "22779640-7b82b6b5-d833-4ae3-9d74-8ca473928b87",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": "200",
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-03-31T03:12:44.533Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "559b6f3f-8ce4-4a2d-89da-049a941b874c",
+			"name": "New Request",
+			"url": "https://nivelamento-5.onrender.com/operadoras?q=jul",
+			"time": 732,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				732
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2e4aca8b-977b-416a-986d-015f9b8ee773",
+			"name": "New Request",
+			"url": "https://nivelamento-5.onrender.com/operadoras?q=klkfkdls",
+			"time": 373,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				373
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ee6518cf-e53e-41cb-9e8a-464ae6174215",
+			"name": "New Request",
+			"url": "https://nivelamento-5.onrender.com/operadoras?q=j1265",
+			"time": 362,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				362
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6c423e14-e9f5-46d7-ad6d-8ef86d4c04d2",
+			"name": "New Request",
+			"url": "https://nivelamento-5.onrender.com/operadoras?q=julho",
+			"time": 390,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				390
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a84a0952-1eef-4ea5-9ae6-423f57dca936",
+			"name": "New Request",
+			"url": "https://nivelamento-5.onrender.com/operadoras?q={json}",
+			"time": 402,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				402
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d9802799-91b5-421e-88c8-b0a5caa73b4d",
+			"name": "New Request",
+			"url": "https://nivelamento-5.onrender.com/operadoras?q=lçkfda",
+			"time": 357,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				357
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "fb99efac-fcce-4d75-97a3-94efd9617be8",
+			"name": "New Request",
+			"url": "https://nivelamento-5.onrender.com/operadoras?q={nfldasnlsm**$%H*}",
+			"time": 384,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				384
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "68411050-4af9-4e37-a60b-3d49fc57d3df",
+			"name": "New Request",
+			"url": "https://nivelamento-5.onrender.com/operadoras?q=",
+			"time": 1908,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1908
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "37bc8a83-a28c-42ea-be3a-94b28828b781",
+			"name": "New Request",
+			"url": "https://nivelamento-5.onrender.com/operadoras?q=q",
+			"time": 371,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				371
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e2c2c416-b3ed-4bf9-bb07-e6f10bb7abfa",
+			"name": "New Request",
+			"url": "https://nivelamento-5.onrender.com/operadoras?q=supo apt get install",
+			"time": 416,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				416
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 5695,
+	"collection": {
+		"requests": [
+			{
+				"id": "559b6f3f-8ce4-4a2d-89da-049a941b874c",
+				"method": "GET"
+			},
+			{
+				"id": "2e4aca8b-977b-416a-986d-015f9b8ee773",
+				"method": "GET"
+			},
+			{
+				"id": "ee6518cf-e53e-41cb-9e8a-464ae6174215",
+				"method": "GET"
+			},
+			{
+				"id": "6c423e14-e9f5-46d7-ad6d-8ef86d4c04d2",
+				"method": "GET"
+			},
+			{
+				"id": "a84a0952-1eef-4ea5-9ae6-423f57dca936",
+				"method": "GET"
+			},
+			{
+				"id": "d9802799-91b5-421e-88c8-b0a5caa73b4d",
+				"method": "GET"
+			},
+			{
+				"id": "fb99efac-fcce-4d75-97a3-94efd9617be8",
+				"method": "GET"
+			},
+			{
+				"id": "68411050-4af9-4e37-a60b-3d49fc57d3df",
+				"method": "GET"
+			},
+			{
+				"id": "37bc8a83-a28c-42ea-be3a-94b28828b781",
+				"method": "GET"
+			},
+			{
+				"id": "e2c2c416-b3ed-4bf9-bb07-e6f10bb7abfa",
+				"method": "GET"
+			}
+		]
+	}
+}
