@@ -126,10 +126,72 @@ query2 ->
 Problemas Encontrados:
     Campos float usando ',' -> solução: /task3e4/remove_virgules.py
 
-# Desafio 4
-## api
+4. **Testando os endpoints:**
+   - Acesse `/operadoras?q=TERMO_DE_BUSCA` para buscar operadoras
+   - Exemplo:
+     ```
+     http://localhost:8000/operadoras?q=saude
+     ```
+
+**API também disponível em produção:**  
+https://nivelamento-5.onrender.com/operadoras?q=TERMO_DE_BUSCA
+
+---
+
+### **Objetivo:**
+Criar uma API simples para buscar operadoras de planos de saúde pelos campos Razão Social ou Nome Fantasia.
 
 
+### **Testes **
+Um coleção de testes para essa api está na raiz do projeto em collections_teste.json
+
+### **Linguagem e Pacotes:**
+- Python
+- FastAPI (framework web)
+- uvicorn (servidor ASGI)
+- pandas (para manipulação de dados, se necessário)
+
+### **O que pensei? Como foi feito?**
+1. **Estrutura da API:**
+   - Criei um endpoint GET `/operadoras` que aceita um parâmetro de query `q`
+   - Implementei CORS para permitir acesso de qualquer origem
+
+2. **Carregamento de dados:**
+   - Função `carregar_operadoras()` lê o CSV e armazena em memória
+   - Remove aspas extras e formata os dados
+
+3. **Busca:**
+   - Compara o termo de busca (case insensitive) com Razão Social e Nome Fantasia
+   - Retorna todas as operadoras que contêm o termo em qualquer um desses campos
+
+4. **Middlewares (comentados):**
+   - Implementei (mas deixei comentado) um middleware de autenticação via API Key
+   - Pode ser ativado se necessário para controle de acesso
+
+5. **Hospedagem:**
+   - Configurei para rodar no Render.com
+   - A porta é configurada automaticamente pela variável de ambiente PORT
+
+### **Problemas Encontrados:**
+1. **Formato do CSV:**
+   - Problema com delimitador ";" e aspas nos campos
+   - Solução: Especificar delimitador e remover aspas extras
+
+2. **Case sensitivity:**
+   - Busca sensível a maiúsculas/minúsculas
+   - Solução: Converter ambos os lados para lowercase
+
+3. **Performance:**
+   - Carregar todo o CSV em memória pode ser problemático para arquivos muito grandes
+   - Solução atual funciona bem para o tamanho atual do dataset
+
+### **Extras:**
+- O código inclui prints de debug (mostrando as 5 primeiras operadoras) que podem ser removidos
+- Configuração pronta para deploy em serviços como Render: https://nivelamento-5.onrender.com
+
+# Parte2: front_end: 
+   O front-End está hospedado em: https://desafiointuitivecare.vercel.app/
+   Código fonte no repositório: https://github.com/davi-stack/desafio_intuitive_care_front
 
 
 
